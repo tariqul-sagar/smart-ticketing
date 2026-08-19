@@ -1,22 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/f81ca98412.js" crossorigin="anonymous"></script>
     <!-- Daisy UI & Tailwind CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="stylesheet" href="css/style.css">
 
-  <body>
-    <header></header>
+    <!-- Internal CSS -->
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-menuHover: #1DD100;
+        --color-btnBg: #1DD1001A;
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="max-w-7xl m-auto">
+        <!-- navbar -->
+        <div class="font-raleway">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a href="index.html" class="text-3xl font-bold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="hover:bg-transparent hover:text-menuHover font-medium">Home</a></li>
+                        <li><a class="hover:bg-transparent hover:text-menuHover font-medium">About</a></li>
+                        <li><a class="hover:bg-transparent hover:text-menuHover font-medium">Destination</a></li>
+                        <li><a class="hover:bg-transparent hover:text-menuHover font-medium">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-menuHover border-menuHover bg-btnBg font-bold">Bus<i
+                            class="fa-solid fa-bus-side"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Hero section -->
+        <div>
+            <div class="hero min-h-[550px] rounded-3xl"
+                style="background-image: url(images/banner.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-3xl">
+                        <h1 class="mb-5 text-3xl font-bold">End-to-End Travel with<br><span>P Paribahan</span></h1>
+                        <p class="mb-5">
+                            Yes, you can run unit tests and view the results directly within the app. The integrated
+                            testing features allow for a streamlined .
+                        </p>
+                        <button class="btn bg-menuHover border-menuHover">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
 
     <main></main>
 
@@ -24,5 +88,6 @@
 
     <!-- External JS file -->
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
