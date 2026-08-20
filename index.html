@@ -19,6 +19,8 @@
         --color-clifford: #da373d;
         --color-menuHover: #1DD100;
         --color-btnBg: #1DD1001A;
+        --color-stat: #030712;
+        --color-statP: #03071299;
       }
     </style>
 
@@ -58,23 +60,62 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn text-menuHover border-menuHover bg-btnBg font-bold">Bus<i
-                            class="fa-solid fa-bus-side"></i></a>
+                    <a class="btn text-menuHover border-menuHover bg-btnBg font-bold">Bus <img src="images/bus-icon.png"
+                            alt=""></i></a>
                 </div>
             </div>
         </div>
         <!-- Hero section -->
         <div>
-            <div class="hero min-h-[550px] rounded-3xl"
+            <div class="hero min-h-96 lg:min-h-[600px] rounded-3xl"
                 style="background-image: url(images/banner.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
                 <div class="hero-content text-neutral-content text-center">
                     <div class="max-w-3xl">
-                        <h1 class="mb-5 text-3xl font-bold">End-to-End Travel with<br><span>P Paribahan</span></h1>
-                        <p class="mb-5">
+                        <h1 class="mb-5 text-3xl lg:text-6xl font-bold font-raleway">End-to-End Travel with<br><span
+                                class="text-menuHover">P Paribahan</span></h1>
+                        <p class="mb-5 mx-2 md:mx-24 font-inter text-sm lg:text-base">
                             Yes, you can run unit tests and view the results directly within the app. The integrated
-                            testing features allow for a streamlined .
+                            testing features allow for a streamlined.
                         </p>
-                        <button class="btn bg-menuHover border-menuHover">Buy Tickets</button>
+                        <button class="btn bg-menuHover border-menuHover font-raleway font-bold text-sm">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Box -->
+        <div class="flex justify-center my-3 md:-my-10">
+            <div class="stats stats-vertical md:stats-horizontal gap-2 md:gap-16 space-y-4 md:space-y-0">
+                <div
+                    class="stat bg-white rounded-3xl flex flex-row justify-center items-center px-6 lg:px-12 py-6 lg:py-10 border-b-2 border-b-menuHover gap-6">
+                    <div>
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div class="font-inter">
+                        <h4 class="stat-value text-stat text-2xl lg:text-3xl font-bold">500+</h4>
+                        <p class="text-statP text-sm lg:text-base">Registered users</p>
+                    </div>
+                </div>
+
+                <div
+                    class="stat bg-white rounded-3xl flex flex-row justify-center items-center px-6 lg:px-12 py-6 lg:py-10 border-b-2 border-b-menuHover gap-6">
+                    <div class="text-primary">
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="stat-value text-stat text-2xl lg:text-3xl font-bold">1.7 lacks</h4>
+                        <p class="text-statP text-sm lg:text-base">Tickets sold</p>
+                    </div>
+                </div>
+
+                <div
+                    class="stat bg-white rounded-3xl flex flex-row justify-center items-center px-6 lg:px-12 py-6 lg:py-10 border-b-2 border-b-menuHover gap-6">
+                    <div class="text-primary">
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="stat-value text-stat text-2xl lg:text-3xl font-bold">80K+</h4>
+                        <p class="text-statP text-sm lg:text-base">Rental partners</p>
                     </div>
                 </div>
             </div>
