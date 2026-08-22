@@ -16,7 +16,6 @@
     <!-- Internal CSS -->
     <style type="text/tailwindcss">
         @theme {
-        --color-clifford: #da373d;
         --color-menuHover: #1DD100;
         --color-btnBg: #1DD1001A;
         --color-stat: #030712;
@@ -30,6 +29,8 @@
         --color-phBg: #F7F8F8;
         --color-hrDash: #03071233;
         --color-routeBtn: #0307120D;
+        --color-seatDash: #0307124D;
+        --color-steerBg: #0307121A;
       }
     </style>
 
@@ -193,7 +194,8 @@
                                     <img src="images/bus-logo.png" alt="">
                                 </div>
                                 <div>
-                                    <h5 class="font-raleway font-bold text-base lg:text-2xl text-stat">Greenline Paribahan</h5>
+                                    <h5 class="font-raleway font-bold text-base lg:text-2xl text-stat">Greenline
+                                        Paribahan</h5>
                                     <p class="font-inter text-ph-p text-xs lg:text-base">Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
@@ -215,13 +217,14 @@
                                 <p class="font-medium text-xs lg:text-sm text-stat">9:00 PM</p>
                             </div>
                             <hr class="border-b border-dashed border-hrDash my-3">
-                            <div class="flex flex-col lg:flex-row justify-between mt-6 font-inter font-medium text-cou15Title space-y-3">
-                                <button
-                                    class="btn rounded-lg border-routeBtn bg-routeBtn text-xs lg:text-sm">Boarding Point - Laxmipur</button>
-                                <button
-                                    class="btn rounded-lg border-routeBtn bg-routeBtn text-xs lg:text-sm">Dropping Point - Bogura</button>
-                                <button
-                                    class="btn rounded-lg border-routeBtn bg-routeBtn text-xs lg:text-sm">Est. Time - 11 Hour</button>
+                            <div
+                                class="flex flex-col lg:flex-row justify-between mt-6 font-inter font-medium text-cou15Title space-y-3">
+                                <button class="btn rounded-lg border-routeBtn bg-routeBtn text-xs lg:text-sm">Boarding
+                                    Point - Laxmipur</button>
+                                <button class="btn rounded-lg border-routeBtn bg-routeBtn text-xs lg:text-sm">Dropping
+                                    Point - Bogura</button>
+                                <button class="btn rounded-lg border-routeBtn bg-routeBtn text-xs lg:text-sm">Est. Time
+                                    - 11 Hour</button>
                             </div>
                         </div>
                     </div>
@@ -234,7 +237,257 @@
                 </div>
             </div>
             <!-- Seats -->
-            <div class="max-w-7xl m-auto"></div>
+            <div class="max-w-7xl m-auto mt-10 bg-white p-2 lg:p-3 rounded-2xl">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="w-full lg:w-2/3 border-r-0 lg:border-r-2 border-dashed border-seatDash p-2 lg:p-4">
+                        <h5 class="font-raleway text-lg text-stat font-semibold">Select Your Seat</h5>
+                        <hr class="border-b border-dashed border-hrDash my-3">
+                        <div class="flex justify-between items-center">
+                            <div class="w-full md:w-auto">
+                                <button
+                                    class="btn shadow-none font-inter font-normal border-none bg-transparent text-cou15p text-xs lg:text-base p-2"><img
+                                        src="images/seat-gray.png" alt="">Available</button>
+                            </div>
+                            <div class="w-full md:w-auto">
+                                <button
+                                    class="btn shadow-none font-inter font-normal border-none bg-transparent text-menuHover text-xs lg:text-base p-2"><img
+                                        src="images/seat-green-filled.png" alt="">Selected</button>
+                            </div>
+                        </div>
+                        <hr class="border-b border-dashed border-hrDash my-3">
+                        <div class="flex justify-between">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd class="kbd py-4 flex flex-1 border-none bg-steerBg invisible">A</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd class="flex-1 kbd py-4 invisible">A1</kbd>
+                                    <kbd class="flex-1 kbd py-4 invisible">A2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd class="flex-1 kbd py-4 invisible">A3</kbd>
+                                    <kbd class="flex-1 kbd py-6 bg-steerBg border-none"><img src="images/wheel.png"
+                                            alt=""></kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- A -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">A</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">A1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">A2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">A3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">A4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- B -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">B</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">B1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">B2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">B3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">B4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- C -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">C</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">C1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">C2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">C3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">C4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- D -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">D</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">D1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">D2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">D3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">D4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- E -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">E</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">E1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">E2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">E3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">E4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- F -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">F</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">F1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">F2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">F3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">F4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- G -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">G</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">G1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">G2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">G3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">G4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- H -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">H</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">H1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">H2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">H3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">H4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- I -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">I</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">I1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">I2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">I3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">I4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- J -->
+                        <div class="flex justify-between mt-5">
+                            <div class="w-1/6 lg:w-1/12">
+                                <kbd
+                                    class="kbd py-4 flex flex-1 border-none bg-transparent text-cou15p font-inter font-medium text-xs lg:text-sm">J</kbd>
+                            </div>
+                            <div class="w-5/6 lg:w-11/12 flex justify-between gap-5 lg:gap-16">
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">J1</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">J2</kbd>
+                                </div>
+                                <div class="flex flex-1 justify-between gap-2 lg:gap-8">
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">J3</kbd>
+                                    <kbd
+                                        class="flex-1 kbd py-4 bg-phBg border-none text-cou15p font-inter font-medium text-xs lg:text-sm">J4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/3 p-2 lg:p-4 mt-12 lg:mt-0">
+                        <h5 class="font-raleway text-lg text-stat font-semibold">Select Your Seat</h5>
+                        <hr class="border-b border-dashed border-hrDash my-3">
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
