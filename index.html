@@ -31,6 +31,8 @@
         --color-routeBtn: #0307120D;
         --color-seatDash: #0307124D;
         --color-steerBg: #0307121A;
+        --color-footer-p: #FFFFFFCC;
+        --color-footerDash: #FFFFFF4d;
       }
     </style>
 
@@ -59,7 +61,7 @@
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a href="index.html" class="text-3xl font-bold">P-Ticket</a>
+                    <a href="index.html" class="text-xl lg:text-3xl font-bold">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -546,7 +548,8 @@
                                 <input type="email" class="input validator w-full font-inter text-xs couN15p"
                                     placeholder="Enter your email id" />
                             </fieldset>
-                            <button type="submit" class="btn w-full text-white font-bold bg-menuHover border-transparent rounded-lg font-inter text-sm shadow-none">
+                            <button type="submit"
+                                class="btn w-full text-white font-bold bg-menuHover border-transparent rounded-lg font-inter text-sm shadow-none">
                                 Next
                             </button>
                             <div class="flex justify-around gap-4 text-xs text-ph-p font-inter">
@@ -561,7 +564,38 @@
 
     </main>
 
-    <footer></footer>
+    <footer class="bg-stat py-12 lg:py-20 px-3 lg:px-0">
+        <div class="max-w-7xl m-auto">
+            <!-- logo & app -->
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div>
+                    <h3 class="font-raleway text-xl lg:text-3xl font-extrabold text-white mb-2 lg:mb-4">P-Ticket</h3>
+                    <p class="w-full lg:w-2/3 text-footer-p text-sm font-inter">P-Ticket is a digital platform to make your daily commuting
+                        better.
+                    </p>
+                </div>
+                <div class="mt-6 lg:mt-0">
+                    <h4 class="font-raleway text-white font-semibold">Download our app</h4>
+                    <div class="border border-white rounded-lg flex justify-between items-center p-3 gap-2 mt-4 w-fit">
+                        <img src="images/playstore.png" alt="">
+                        <div class="text-white font-raleway">
+                            <p class="uppercase text-xs font-bold">Get it on</p>
+                            <h6 class="font-semibold text-lg">Google Play</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-b border-dashed border-footerDash my-7">
+            <div class="flex flex-col lg:flex-row justify-between">
+               <p class="font-inter text-xs text-footer-p mb-5 lg:mb-0 text-center lg:text-left">@All rights reserved, P-Ticket services limited 2026.</p>
+               <ul class="font-inter text-xs text-white font-medium flex justify-between gap-2 lg:gap-6 text-center lg:text-left">
+                <li>Terms & condition</li>
+                <li>Return & refund policy</li>
+                <li>Privacy policy</li>
+               </ul>
+            </div>
+        </div>
+    </footer>
 
     <!-- External JS file -->
     <script src="js/script.js"></script>
